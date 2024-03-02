@@ -2,19 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f2f5;
 }
 
 .container {
     max-width: 600px;
-    margin: 20px 0 20px 20px; /* Adjusted margin to move the container to the left */
-    background: linear-gradient(to bottom, rgb(201, 226, 234) 0%, rgb(7, 151, 223) 100%);
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #e0f7fa, #03a9f4);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
     text-align: center;
+    color: #0d47a1;
 }
 
 .main-content {
@@ -22,12 +24,14 @@ body {
 }
 
 textarea {
-    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    width: calc(100% - 20px);
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
     resize: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .button-container {
@@ -37,19 +41,19 @@ textarea {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    border: 1px ;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-color: #0d074e;
+    background-color: #0d47a1;
     color: #fff;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow for the 3D effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px); /* Add a slight upward shift on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+    background-color: #1565c0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 #image_container {
@@ -65,8 +69,8 @@ button:hover {
 }
 
 .recording {
-    background-color: #ff4d4d; /* Change button color to red */
-    animation: blink 1s infinite alternate; /* Apply a blinking animation */
+    background-color: #ff4d4d;
+    animation: blink 1s infinite alternate;
 }
 
 @keyframes blink {
