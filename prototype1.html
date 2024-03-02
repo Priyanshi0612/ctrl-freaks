@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice to Text Converter</title>
+    <title>Voice to Text and Video Converter</title>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
 
 <div class="container">
     <div class="header">
-        <h1>Voice to Text Converter</h1>
+        <h1>Voice to Text and Video Converter</h1>
     </div>
     <div class="main-content">
         <textarea id="converted_text" rows="6" placeholder="Converted text will appear here..." readonly></textarea>
@@ -18,13 +18,20 @@
             <button id="click_to_record" onclick="toggleRecording()">Start Recording</button>
             <button id="submit_text">Submit</button>
         </div>
-        <div id="image_container">
-            <img id="image_display" alt="Sign Language Display">
+        <div id="video_container">
+            <video id="video_display" controls autoplay>
+                <!-- You can provide a placeholder or default video here -->
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
 </div>
 
-<script src="sign.js"></script>
+<script src="sign.js">
+
+</script>
 
 </body>
 </html>
+

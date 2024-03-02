@@ -1,28 +1,28 @@
 const convertedText = document.getElementById('converted_text');
 const startButton = document.getElementById('click_to_record');
 const submitButton = document.getElementById('submit_text');
-const imageContainer = document.getElementById('image_container');
-const imageDisplay = document.getElementById('image_display');
+const videoDisplay = document.getElementById('video_display');
 let recognition;
+
 if ('webkitSpeechRecognition' in window) {
     recognition = new webkitSpeechRecognition();
 } else if ('SpeechRecognition' in window) {
     recognition = new SpeechRecognition();
 } else {
     console.log("Speech recognition not supported in this browser.");
-    
 }
+
 let isRecording = false;
 
-function startRecording() {
+function toggleRecording() {
     isRecording = !isRecording;
     const button = document.getElementById("click_to_record");
     if (isRecording) {
         button.classList.add("recording");
-        // Code to start recording
+        recognition.start();
     } else {
         button.classList.remove("recording");
-        // Code to stop recording
+        recognition.stop();
     }
 }
 
@@ -55,16 +55,18 @@ startButton.addEventListener('click', () => {
     convertedText.value = '';
 });
 
-
-
 function handleTranscript(transcript) {
     let letter = transcript.trim().toUpperCase();
-    let imagePath = letter + ".mp4"; 
-    console.log("Image Path:", imagePath); 
-    imageDisplay.src = imagePath;
-    imageDisplay.alt = 'my image';
-    imageDisplay.width = 200;
-    imageDisplay.height = 400; 
-
-    imageContainer.style.display = 'block'; 
+    let videoPath = letter + ".mp4";
+    console.log("Video Path:", videoPath); 
+    // Pause the video before changing the source
+    videoDisplay.pause();
+    videoDisplay.src = videoPath;
+    videoDisplay.alt = 'my video';
+    videoDisplay.width = 200;
+    videoDisplay.height = 400; 
+    // Reset the video to start from the beginning
+    videoDisplay.currentTime = 0;
+    // Start playing the video
+    videoDisplay.play();
 }
