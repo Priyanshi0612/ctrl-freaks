@@ -24,7 +24,7 @@ function playVideosInSequence(videoPaths) {
             videoElement.src = videoPaths[index];
             videoElement.controls = true;
             videoElement.style.display = "block";
-            videoElement.style.height = "130px";
+            videoElement.style.height = "220px";
             videoContainer.appendChild(videoElement);
 
             videoElement.addEventListener('ended', () => {

@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="tts.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="vts.html">Voice to Sign Language</a></li>
-                <li><a href="tts.html">Text to Sign Language</a></li>
-                <li><a href="lts.html">Letters in Sign Language</a></li>
-                <li><a href="about.html">About</a></li>
-                <!-- <li><a href="contact.html">Contact</a></li> -->
+                <li><a href="vts.html">Voice-Sign</a></li>
+                <li><a href="tts.html">Text-Sign</a></li>
+                <li><a href="lts.html">Letter-Sign</a></li>
             </ul>
-        </nav>
-    </header>
+            <h1 class="logo">EG</h1>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="header">
@@ -34,7 +39,7 @@
                 <button id="submit_text" style="text-align:center">Submit</button>
             </div>
             <div id="video_container">
-                <img id="image_display" src="logo.png" alt="Placeholder Image">
+                <!-- <img id="image_display" src="logo.png" alt="Placeholder Image"> -->
                 <video id="video_display" controls autoplay>
                     <source src="" type="video/mp4">
                 </video>

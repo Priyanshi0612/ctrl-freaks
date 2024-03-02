@@ -19,6 +19,7 @@ function displayImagesInSequence(imagePaths) {
     function displayNextImage() {
         if (index < imagePaths.length) {
             imageDisplay.src = imagePaths[index];
+            imageDisplay.style.opacity = '1';
             index++;
         }
     }
