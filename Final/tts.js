@@ -18,7 +18,6 @@ function playVideosInSequence(videoPaths) {
 
     function playNextVideo() {
         if (index < videoPaths.length) {
-            // Clear the video container before adding a new video
             videoContainer.innerHTML = '';
 
             let videoElement = document.createElement("video");

@@ -30,7 +30,8 @@ function toggleRecording() {
 let lastTranscript = '';
 
 recognition.onresult = (event) => {
-    // button.textContent = 'Stop Recording';
+    // clickToRecord.textContent = 'Recording';
+
     const result = event.results[event.results.length - 1];
     const transcript = result[0].transcript;
     convertedText.value += transcript;
@@ -68,14 +69,15 @@ function playVideosInSequence(videoPaths) {
 
     function playNextVideo() {
         if (index < videoPaths.length) {
-            // Clear the video container before adding a new video
+
             videoContainer.innerHTML = '';
 
             let videoElement = document.createElement("video");
             videoElement.src = videoPaths[index];
             videoElement.controls = true;
             videoElement.style.display = "block";
-            videoElement.style.height = "130px";
+            videoElement.style.height = "220px";
+            // videoElement.style.padding = "130px";
             videoContainer.appendChild(videoElement);
 
             videoElement.addEventListener('ended', () => {
