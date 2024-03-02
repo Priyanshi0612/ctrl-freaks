@@ -7,8 +7,37 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>Voice to Text and Video Converter</h1>
+        </div>
+        <div class="main-content">
+            <div class="dropdown-container">
+                <label for="conversion-type">Conversion Type:</label>
+                <select id="conversion-type">
+                    <option value="voice-to-text">Voice to Text</option>
+                    <option value="text-to-video">Text to Video</option>
+                    <option value="voice-to-video">Voice to Video</option>
+                </select>
+            </div>
+            <textarea id="converted_text" rows="6" placeholder="Converted text will appear here..." readonly></textarea>
+            <div class="button-container">
+                <button id="click_to_record" onclick="toggleRecording()">Start Recording</button>
+                <button id="submit_text">Submit</button>
+            </div>
+            <div id="video_container">
+                <video id="video_display" controls autoplay>
+                    <!-- You can provide a placeholder or default video here -->
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    
 
-<div class="container">
+
+ <!--  <div class="container">
     <div class="header">
         <h1>Voice to Text and Video Converter</h1>
     </div>
@@ -20,13 +49,13 @@
         </div>
         <div id="video_container">
             <video id="video_display" controls autoplay>
-                <!-- You can provide a placeholder or default video here -->
+                
                 <source src="" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </div>
-</div>
+</div> -->
 
 <script src="sign.js">
 
