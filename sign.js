@@ -59,7 +59,7 @@ startButton.addEventListener('click', () => {
 
 function handleTranscript(transcript) {
     let letter = transcript.trim().toUpperCase();
-    let imagePath = "Photos/"+letter + ".jpg"; 
+    let imagePath = letter + ".mp4"; 
     console.log("Image Path:", imagePath); 
     imageDisplay.src = imagePath;
     imageDisplay.alt = 'my image';

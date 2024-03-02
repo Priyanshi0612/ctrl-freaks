@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 600px;
     margin: 20px auto;
-    background: linear-gradient(to bottom, #e0f7fa, #03a9f4);
+    background: linear-gradient(to bottom, #90e4b4, #04a246);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -16,7 +16,7 @@ body {
 
 .header h1 {
     text-align: center;
-    color: #0d47a1;
+    color: #087f5b; /* Dark green color for the header */
 }
 
 .main-content {
@@ -44,14 +44,14 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-color: #0d47a1;
+    background-color: #087f5b; /* Dark green color for buttons */
     color: #fff;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #1565c0;
+    background-color: #0da27a; /* Light green color on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
