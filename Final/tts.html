@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Text and Video Converter</title>
+    <link rel="stylesheet" href="tts.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vts.html">Voice to Sign Language</a></li>
+                <li><a href="tts.html">Text to Sign Language</a></li>
+                <li><a href="letters.html">Letters in Sign Language</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <h1>EchoGesture</h1>
+        </div>
+        <div class="main-content">
+            <div class="dropdown-container">
+                <label for="conversion-type">Conversion Type:Text to Sign Language</label>
+                
+            </div>
+            <textarea id="converted_text" rows="6" placeholder="Converted text will appear here..."></textarea>
+            <div class="button-container" style="text-align:center">
+                <button id="submit_text" style="text-align:center">Submit</button>
+            </div>
+            <div id="video_container">
+                <img id="image_display" src="logo.png" alt="Placeholder Image">
+                <video id="video_display" controls autoplay>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EchoGesture. All rights reserved.</p>
+    </footer>
+
+<script src="tts.js"></script>
+
+</body>
+</html>
