@@ -43,7 +43,10 @@ body {
 .navbar .hamburger-lines{
     display: none;
 }
-
+.container-nav{
+    padding-left: 80px;
+    padding-right: 80px;
+}
 
 
 .navbar-container{
@@ -65,7 +68,7 @@ body {
 
 .menu-items li{
     list-style: none;
-    margin: 1.5rem;
+    margin: 1rem;
     /* font-size: 1.8rem; */
 }
 

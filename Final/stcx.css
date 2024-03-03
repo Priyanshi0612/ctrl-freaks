@@ -65,7 +65,7 @@ body {
 
 .menu-items li{
     list-style: none;
-    margin: 1.5rem;
+    margin: 1rem;
     /* font-size: 1.8rem; */
 }
 
@@ -196,6 +196,10 @@ button:hover {
     /* text-align: center; */
     /* display: none; */
     /* border: 2px solid red ; */
+}
+.container-nav{
+    padding-left: 80px;
+    padding-right: 80px;
 }
 #image_display{
     height: 230px;
